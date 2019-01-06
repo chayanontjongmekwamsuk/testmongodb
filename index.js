@@ -53,7 +53,7 @@ MongoClient.connect(url, function(err, db) {
     { _id: 58fdbf5c0ef8a50b4cdd9a90 , name: 'Chuck', address: 'Main Road 989'},
     { _id: 58fdbf5c0ef8a50b4cdd9a91 , name: 'Viola', address: 'Sideway 1633'}
   ];
-  dbo.collection("customers").insertMany(myobj, function(err, res) {
+  dbo.collection("Data").insertMany(myobj, function(err, res) {
     if (err) throw err;
     console.log("Insert data completed");
     db.close();
